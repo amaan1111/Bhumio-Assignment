@@ -282,14 +282,14 @@ const CSVDataTable = () => {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleCloseUpdateDialog} color="primary">
-            Cancel
+            Close
           </Button>
           <Button
             onClick={() => updateStock(dialogData)}
             color="primary"
             variant="contained"
           >
-            Update
+            Save
           </Button>
         </DialogActions>
       </Dialog>
