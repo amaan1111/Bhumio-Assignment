@@ -119,7 +119,6 @@ const CSVDataTable = () => {
   };
 
   const updateStock = (updatedData) => {
-    // Update the LocA_Stock and LocB_Stock values in the main table
     const updatedCSVData = csvData.map((item) => {
       const matchedItem = updatedData.find(
         (updatedItem) =>
@@ -127,10 +126,9 @@ const CSVDataTable = () => {
           updatedItem[1] === item[1] &&
           updatedItem[4] === item[4]
       );
-
       if (matchedItem) {
-        item[8] = matchedItem[8]; // Update LocA_Stock
-        item[10] = matchedItem[10]; // Update LocB_Stock
+        item[8] = matchedItem[8];
+        item[10] = matchedItem[10];
       }
 
       return item;
